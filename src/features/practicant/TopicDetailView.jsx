@@ -447,8 +447,7 @@ const updateProgress = async (practicantDocId, topicDocId) => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "X-RapidAPI-Key":
-              JUDGE0_API_KEY,
+            "X-RapidAPI-Key": import.meta.env.VITE_JUDGE0_API_KEY,
             "X-RapidAPI-Host": "judge0-ce.p.rapidapi.com",
           },
           body: JSON.stringify(requestBody),
