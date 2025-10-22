@@ -164,7 +164,7 @@ useEffect(() => {
       items: [
         { id: "nuevo-admin", label: "Agregar nuevo admin", icon: UserPlus },
         { id: "administradores", label: "Administradores", icon: Users },
-        { id: "detalles", label: "Detalles", icon: FileText },
+        // { id: "detalles", label: "Detalles", icon: FileText },
       ],
     },
     {
@@ -179,8 +179,8 @@ useEffect(() => {
       title: "PRACTICANTES",
       items: [
         { id: "lista-practicantes", label: "Lista", icon: Users },
-        { id: "graficas-progreso", label: "Gráficas (progresos)", icon: BarChart3 },
-        { id: "ranking", label: "Ranking", icon: Award },
+        // { id: "graficas-progreso", label: "Gráficas (progresos)", icon: BarChart3 },
+        // { id: "ranking", label: "Ranking", icon: Award },
       ],
     },
   ];
@@ -316,10 +316,7 @@ useEffect(() => {
 
           {/* Parte fija abajo */}
           <div className="p-6 border-t border-purple-700 space-y-2">
-            <button className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-purple-800 transition-all">
-              <Settings size={18} />
-              <span className="text-sm">Configuración</span>
-            </button>
+          
             <button
               onClick={handleLogout}
               className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-purple-800 transition-all text-purple-300"
